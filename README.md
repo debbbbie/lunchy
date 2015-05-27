@@ -21,7 +21,12 @@ where pattern is just a substring that matches the agent's plist filename.  If y
 
 So instead of:
 
+```
+    # Perhaps You should this first:
+    cp /usr/local/Cellar/memcached/$version/homebrew.mxcl.xxx.plist ~/Library/LaunchAgents/
+
     launchctl load ~/Library/LaunchAgents/io.redis.redis-server.plist
+```    
 
 you can do this:
 
